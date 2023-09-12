@@ -41,6 +41,7 @@ pencil.addEventListener("click", (event) => {
     pencilToolVisible = !pencilToolVisible;
     if(pencilToolVisible) {
         pencilToolCont.style.display = "block";
+        eraserToolCont.style.display = "none";
     }
     else {
         pencilToolCont.style.display = "none";
@@ -51,6 +52,7 @@ eraser.addEventListener("click", (event) => {
     eraserToolVisible = !eraserToolVisible;
     if(eraserToolVisible) {
         eraserToolCont.style.display = "flex";
+        pencilToolCont.style.display = "none";
     }
     else {
         eraserToolCont.style.display = "none";
